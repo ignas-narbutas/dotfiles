@@ -22,7 +22,7 @@ setup_npm () {
 
     info "Enter Myget credentials"
     npm config set @trustpilot:registry=https://trustpilot.myget.org/F/npm/npm/
-    npm login --registry https://trustpilot.myget.org/F/npm/npm/ --scope=@trustpilot >&1
+    npm login --registry https://trustpilot.myget.org/F/npm/npm/ --scope=@trustpilot
     npm config set always-auth true --registry https://trustpilot.myget.org/F/npm/npm/
 
     npm install -g @trustpilot/confocto   
