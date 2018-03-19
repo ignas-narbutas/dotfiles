@@ -47,6 +47,7 @@ cask 'tunnelblick'
 cask 'meld'
 cask 'dotnet-sdk'
 brew 'nuget'
+brew 'vault'
 
 # Apps
 cask 'lastpass'
@@ -58,7 +59,6 @@ cask 'iterm2'
 cask 'slack'
 cask 'vlc'
 cask 'android-file-transfer'
-cask 'vlc'
 cask 'tunnelblick'
 
 # Research

@@ -132,3 +132,6 @@
         enabled = true
 [include]
         path = ~/.gitconfig.local
+[user]
+	name = Mantas Lapėnas
+	email = mlap@trustpilot.com

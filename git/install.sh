@@ -21,7 +21,6 @@ fail () {
 setup_gitconfig () {
   if ! [ -f ~/.gitconfig.local ]
   then
-    info 'setup gitconfig'
 
     git_credential='cache'
     if [ "$(uname -s)" == "Darwin" ]
@@ -35,10 +34,9 @@ setup_gitconfig () {
     read -e git_authoremail
 
     sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.local.symlink.example > ~/.gitconfig.local
-
-    success 'gitconfig'
   fi
 }
 
-info "Setting up git"
+info "Running: ./git/install.sh"
 setup_gitconfig
+success "./git/install.sh"
