@@ -19,7 +19,7 @@ fail () {
 }
 
 setup_npm () {
-    registry="https://trustpilot.myget.org/F/npm/npm"
+    registry="https://trustpilot.myget.org/F/npm/npm/"
 
 
     if [ -z `grep ${registry} ~/.npmrc` ]; then
@@ -27,7 +27,7 @@ setup_npm () {
       npm config set always-auth true --registry ${registry}
 
       info "Adding NPM repo tokens"
-      npm login --registry "${registry}" --scope=@trustpilot
+      npm login --registry ${registry} --scope=@trustpilot
     fi
 
     npm install -g @trustpilot/confocto   
