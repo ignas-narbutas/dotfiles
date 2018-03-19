@@ -10,8 +10,7 @@ success () {
   printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
 }
 
-info "Running: ./system/Install.sh"
 mkdir -p $HOME/Projects
-success "./system/Install.sh"
+success "./system/install.sh"
 
 

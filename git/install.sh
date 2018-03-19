@@ -37,6 +37,5 @@ setup_gitconfig () {
   fi
 }
 
-info "Running: ./git/install.sh"
 setup_gitconfig
 success "./git/install.sh"
