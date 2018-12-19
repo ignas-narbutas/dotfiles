@@ -140,7 +140,7 @@ defaults write $HOME/Library/Preferences/.GlobalPreferences.plist AppleInterface
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
 # Change minimize/maximize window effect
-defaults write com.apple.dock mineffect -string "scale"
+# defaults write com.apple.dock mineffect -string "scale"
 
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
@@ -148,10 +148,10 @@ defaults write com.apple.dock minimize-to-application -bool true
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
-defaults write com.apple.dock persistent-apps -array
+# defaults write com.apple.dock persistent-apps -array
 
 # Show only open applications in the Dock
-defaults write com.apple.dock static-only -bool false
+# defaults write com.apple.dock static-only -bool false
 
 # Group windows by application in Mission Control
 defaults write com.apple.dock expose-group-by-app -bool true
@@ -191,14 +191,14 @@ defaults write com.apple.dock autohide -bool true
 # defaults write com.apple.dock wvous-tl-corner -int 2
 # defaults write com.apple.dock wvous-tl-modifier -int 0
 # Top right screen corner → Put display to sleep
-defaults write com.apple.dock wvous-tr-corner -int 10
-defaults write com.apple.dock wvous-tr-modifier -int 0
+# defaults write com.apple.dock wvous-tr-corner -int 10
+# defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Start screen saver
 # defaults write com.apple.dock wvous-bl-corner -int 5
 # defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom right screen corner → Launchpad
-defaults write com.apple.dock wvous-br-corner -int 11
-defaults write com.apple.dock wvous-br-modifier -int 0
+# defaults write com.apple.dock wvous-br-corner -int 11
+# defaults write com.apple.dock wvous-br-modifier -int 0
 
 ###############################################################################
 # Safari & WebKit                                                             #
@@ -223,7 +223,7 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
 # Disable automatic spell checking
-defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
+# defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
