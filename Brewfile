@@ -3,7 +3,7 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
-tap 'azure/draft'
+tap 'homebrew/cask-drivers'
 
 # Upgrade ruby & bash
 brew 'ruby'
@@ -23,7 +23,6 @@ brew 'findutils'
 brew 'grep'
 
 # Install Binaries
-brew 'awscli'
 brew 'git'
 brew 'hub'
 brew 'tree'
@@ -38,6 +37,7 @@ brew 'tmux'
 brew 'unrar'
 brew 'wget'
 brew 'httpie'
+brew 'youtube-dl'
 
 # development
 brew 'nvm'
@@ -47,31 +47,18 @@ cask 'docker'
 cask 'kitematic'
 cask 'sourcetree'
 cask 'visual-studio-code'
-cask 'pritunl'
 cask 'meld'
-cask 'dotnet-sdk'
-brew 'vault'
-cask 'mono-mdk'
-cask 'rider'
-# Required by SQLWorkbenchJ
 cask 'java8'
-cask 'sqlworkbenchj'
 cask 'robo-3t'
-cask 'google-cloud-sdk'
 brew 'go'
-brew 'kubernetes-cli'
-brew 'kubernetes-helm'
-brew 'azure/draft/draft'
 
 # Apps
-cask 'lastpass'
 cask 'firefox'
 cask 'google-chrome'
-cask 'google-backup-and-sync'
 cask 'iterm2'
-cask 'slack'
 cask 'vlc'
 cask 'android-file-transfer'
+cask 'razer-synapse'
 
 # Research
 #cask 'anaconda'
