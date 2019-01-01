@@ -59,6 +59,12 @@ cask 'iterm2'
 cask 'vlc'
 cask 'android-file-transfer'
 cask 'razer-synapse'
+cask 'keka'
+brew 'jmeter'
+
+# Apps audio
+brew 'qjackctl'
+cask 'bitwig-studio'
 
 # Research
 #cask 'anaconda'
