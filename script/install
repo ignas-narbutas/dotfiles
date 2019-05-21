@@ -7,8 +7,10 @@ set -e
 cd "$(dirname $0)"/..
 
 # Run Homebrew through the Brewfile
-echo "› brew bundle"
-brew bundle
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  echo "› brew bundle"
+  brew bundle
+fi
 
 # find the installers and run them iteratively
 installers=`find . -name install.sh`

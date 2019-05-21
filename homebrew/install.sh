@@ -8,9 +8,11 @@
 info () {
   printf "\r  [ \033[00;34m..\033[0m ] $1\n"
 }
+
 success () {
   printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
 }
+
 if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
@@ -22,5 +24,10 @@ then
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi
+
+  success "./homebrew/install.sh"
 fi
-success "./homebrew/install.sh"
+
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  return 0
+fi
