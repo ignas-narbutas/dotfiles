@@ -1,1 +1,1 @@
-prompt spaceship
+prompt steeef_simplified

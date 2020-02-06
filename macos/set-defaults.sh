@@ -129,7 +129,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
     Privileges -bool true
 
 # Auto hide menu bar
-defaults write NSGlobalDomain _HIHideMenuBar -bool false
+# defaults write NSGlobalDomain _HIHideMenuBar -bool false
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
@@ -142,7 +142,7 @@ defaults write NSGlobalDomain _HIHideMenuBar -bool false
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
 # Change minimize/maximize window effect
-defaults write com.apple.dock mineffect -string "scale"
+# defaults write com.apple.dock mineffect -string "scale"
 
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
@@ -225,7 +225,7 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
 # Disable automatic spell checking
-defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
+# defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
