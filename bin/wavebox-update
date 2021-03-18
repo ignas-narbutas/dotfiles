@@ -1,0 +1,16 @@
+#!/bin/env bash
+
+URL=https://download.wavebox.app/latest/beta/linux/tar
+
+killall wavebox
+
+
+mv ~/bin/wavebox ~/bin/wavebox.old
+
+# Set a trap for SIGINT and SIGTERM signals
+trap 'rm -rf ~/bin/wavebox; mv ~/bin/wavebox.old ~/bin/wavebox' SIGTERM SIGINT
+
+mkdir -p ~/bin/wavebox
+wget -qO- "${URL}" | tar -xz -C ~/bin/wavebox --strip 1
+
+rm -rf ~/bin/wavebox.old

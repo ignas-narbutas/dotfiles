@@ -13,3 +13,4 @@ fi
 # Path to your dotfiles installation.
 export DOTFILES=$HOME/.dotfiles
 export ZSH=~/.dotfiles
+

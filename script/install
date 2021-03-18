@@ -7,7 +7,7 @@ set -e
 cd "$(dirname $0)"/..
 
 # Run Homebrew through the Brewfile
-if [[ "$OSTYPE" != "darwin"* ]]; then
+if [[ "$OSTYPE" == "darwin"* ]]; then
   echo "› brew bundle"
   brew bundle
 fi

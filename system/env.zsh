@@ -4,5 +4,6 @@ export EDITOR='nvim'
 export PROJECTS=~/Projects
 
 # Set the display scaling
-QT_SCALE_FACTOR=1
-QT_QPA_PLATFORM=wayland
+export QT_SCALE_FACTOR=1
+export QT_QPA_PLATFORM=wayland
+

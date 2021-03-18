@@ -12,7 +12,7 @@ success () {
 }
 
 if [[ "$OSTYPE" != "darwin"* ]]; then
-  return 0
+  exit 0
 fi
 
 sudo softwareupdate -i -a

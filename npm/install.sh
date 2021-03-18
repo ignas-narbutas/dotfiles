@@ -19,6 +19,7 @@ fail () {
 }
 
 setup_npm () {
+  info "setting up npm"
 }
 
 setup_npm

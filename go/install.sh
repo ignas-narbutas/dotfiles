@@ -12,16 +12,16 @@ info "Installing golang tools"
 
 source $(dirname $0)/path.zsh
 
-go get -v \
-  github.com/mdempsky/gocode \
-  github.com/uudashr/gopkgs/cmd/gopkgs \
-  github.com/ramya-rao-a/go-outline \
-  github.com/acroca/go-symbols \
-  golang.org/x/tools/cmd/guru \
-  golang.org/x/tools/cmd/gorename \
-  github.com/derekparker/delve/cmd/dlv \
-  github.com/rogpeppe/godef \
-  github.com/sqs/goreturns \
-  github.com/golang/lint/golint
+# go get -v \
+#   github.com/mdempsky/gocode \
+#   github.com/uudashr/gopkgs/cmd/gopkgs \
+#   github.com/ramya-rao-a/go-outline \
+#   github.com/acroca/go-symbols \
+#   golang.org/x/tools/cmd/guru \
+#   golang.org/x/tools/cmd/gorename \
+#   github.com/derekparker/delve/cmd/dlv \
+#   github.com/rogpeppe/godef \
+#   github.com/sqs/goreturns \
+#   github.com/golang/lint/golint
 
 success "Installed golang tools"

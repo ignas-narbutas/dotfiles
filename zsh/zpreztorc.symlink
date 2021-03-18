@@ -1,4 +1,4 @@
-# -*- mode: shell -*-
+#zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib -*- mode: shell -*-
 # vi: set ft=shell :
 #
 # General
@@ -39,9 +39,10 @@ zstyle ':prezto:load' pmodule \
   'python' \
   'tmux' \
   'docker' \
+  'gcloud' \
+  'kubernetes' \
   'syntax-highlighting' \
-  'contrib-clipboard' \
-  'contrib-prompt' \
+  'clipboard' \
   'prompt'
 
 #
