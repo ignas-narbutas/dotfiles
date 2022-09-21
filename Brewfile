@@ -1,7 +1,7 @@
 # Taps
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'homebrew/cask-drivers'
 tap 'cloudfoundry/tap'
@@ -11,8 +11,8 @@ brew 'ruby'
 brew 'bash'
 
 # Install ZSH
-# brew 'zsh'
-# brew 'zsh-completions'
+brew 'zsh'
+brew 'zsh-completions'
 
 # Install GNU core utilities (those that come with macOS are outdated)
 brew 'coreutils'
@@ -41,6 +41,8 @@ brew 'unrar'
 brew 'wget'
 brew 'httpie'
 brew 'youtube-dl'
+brew 'direnv'
+brew 'starship'
 
 # development
 brew 'nvm'
@@ -59,7 +61,7 @@ cask 'firefox'
 # cask 'google-chrome'
 cask 'vivaldi'
 cask 'iterm2'
-cask 'vlc'
+# cask 'vlc'
 # cask 'android-file-transfer'
 cask 'keka'
 # cask 'razer-synapse'
