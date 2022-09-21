@@ -48,6 +48,9 @@ There's a few special files in the hierarchy.
 
 ## install
 
+Setup the Github authentication using SSH key using the  [guide](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+
+
 Run this:
 
 ```sh

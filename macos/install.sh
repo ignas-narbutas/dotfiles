@@ -11,5 +11,10 @@ success () {
   printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
 }
 
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  exit 0
+fi
+
+
 sudo softwareupdate -i -a
 success "./macos/install.sh"

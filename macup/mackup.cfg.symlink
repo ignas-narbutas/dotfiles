@@ -1,0 +1,8 @@
+[storage]
+engine = file_system
+path = /Volumes/User/ignas/Documents/uugCloud
+
+[applications_to_sync]
+ssh
+docker
+vscode

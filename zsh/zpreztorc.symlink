@@ -1,4 +1,4 @@
-# -*- mode: shell -*-
+#zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib -*- mode: shell -*-
 # vi: set ft=shell :
 #
 # General
@@ -33,15 +33,16 @@ zstyle ':prezto:load' pmodule \
   'archive' \
   'fasd' \
   'git' \
-  'osx' \
   'history-substring-search' \
   'ssh' \
   'node' \
+  'python' \
   'tmux' \
   'docker' \
+  'gcloud' \
+  'kubernetes' \
   'syntax-highlighting' \
-  'contrib-clipboard' \
-  'contrib-prompt' \
+  'clipboard' \
   'prompt'
 
 #
@@ -71,6 +72,12 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
 zstyle ':prezto:module:editor' ps-context 'yes'
+
+zstyle ':prezto:module:editor:info:keymap:primary' format '>>>'
+zstyle ':prezto:module:editor:info:keymap:primary:insert' format 'I'
+zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format 'O'
+zstyle ':prezto:module:editor:info:keymap:alternate' format '<<<'
+zstyle ':prezto:module:editor:info:completing' format '...'
 
 #
 # Git
@@ -111,7 +118,7 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 #
 
 # Set the Pacman frontend.
-# zstyle ':prezto:module:pacman' frontend 'yaourt'
+zstyle ':prezto:module:pacman' frontend 'yaourt'
 
 #
 # Prompt
@@ -177,8 +184,8 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
    'brackets' \
    'pattern' \
    'line' \
-   'cursor' \
-   'root'
+   'root' \
+#   'cursor'
 
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
